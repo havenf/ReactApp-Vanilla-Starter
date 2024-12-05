@@ -2,8 +2,8 @@ import React, { useEffect } from "react";
 import { observer } from "mobx-react-lite";
 
 
-function HomePage() {
-
+function HomePage() 
+{
   useEffect(() => {
     
   }, []) // Variables in array will "React", run useEffect then, update webpage.
@@ -15,4 +15,4 @@ function HomePage() {
   )
 }
 
-export default observer(HomePage)
+export default observer(HomePage);

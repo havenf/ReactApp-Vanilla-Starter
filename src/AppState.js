@@ -1,5 +1,5 @@
-import { makeAutoObservable } from "mobx";
-import { isValidProp } from "./utils/isValidProp.js";
+import { makeAutoObservable, action } from "mobx";
+import { propValidator } from "./Utils/PropValidator.js";
 
 
 class ObservableAppState 
@@ -23,11 +23,11 @@ class ObservableAppState
 
 export const AppState = new Proxy(new ObservableAppState(), {
   get(target, prop) {
-    isValidProp(target, prop)
+    propValidator(target, prop)
     return target[prop]
   },
   set(target, prop, value) {
-    isValidProp(target, prop)
+    propValidator(target, prop)
     action(() => {
       target[prop] = value
     })()

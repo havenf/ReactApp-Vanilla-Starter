@@ -50,4 +50,4 @@ class ExampleService
     }
 }
 
-export const ExampleService = new ExampleService();
+export const exampleService = new ExampleService();

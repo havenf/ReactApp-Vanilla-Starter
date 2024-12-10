@@ -7,11 +7,12 @@ export default function exampleComponent({ example }) {
     function setActiveExample()
     {
         AppState.activeExample = example;
+        console.log(AppState.activeExample);
     }
 
     return (
         <div onClick={setActiveExample}>
-            Example Iteration
+            Example Iteration (Click to set active)
         </div>
     )
 }

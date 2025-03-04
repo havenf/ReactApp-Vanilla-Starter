@@ -12,6 +12,6 @@ components and pages.
 - Page router and mobx - needs additional documentation.
 
 # Usage Instructions
-- `npm i` in highest direectory.
+- `npm i` in highest directory.
 - `npm run dev` to run a dev server.
 - `npm run build` for production environments.
